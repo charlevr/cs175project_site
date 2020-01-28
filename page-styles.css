@@ -31,6 +31,10 @@ h1 {
     transition: .5s;
 }
 
+h2 {
+    font-weight:normal; 
+}
+
 h1:hover {
     color: #769ECB;
     filter: brightness(85%)
