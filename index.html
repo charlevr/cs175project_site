@@ -35,6 +35,9 @@
       </br>
       <b>Summary</b>
 
+      </br>
+      </br>
+
       For this project the focus will be on building a reinforcement learning (RL) agent in Minecraft using the malmo
       library. In particular, the goal will be for the agent to be able to mine iron, a necessary material for
       advancement in the survival mode of Minecraft. To accomplish this, the agent will use the environment and the
@@ -43,19 +46,26 @@
       maximize this reward metric in a way that pushes it to obtain a piece of iron ore. Since iron is eventually needed
       to obtain diamond, this task is a subtask of the popular diamond-finding task.
 
+      </br>
+      </br>
+
       <b>Evaluation Plan</b>
-
+      </br>
+      </br>
       <i>Quantitative Metrics</i>
-
+      </br>
+      </br>
       The metric we will use includes: time to finding iron ore, health remaining upon reaching goal, and hunger upon
       reaching goal. These metrics will ensure that the agent not only completes the given task, but also completes it
       in an efficient and reasonable way. The experiment will be using a human baseline, where two or three people of
       varying skill level will be asked to mine iron ore. Their time taken, health, and hunger level will be recorded
       once they finish the task. Thus, the quantitative success of the agent will be measured by how well it does
       compared to the human baseline.
-
+      </br>
+      </br>
       <i>Qualitative Metrics</i>
-
+      </br>
+      </br>
       It seems that a clear way to qualitatively evaluate these metrics is to use graphs on the metrics as well as on
       the reward function. Then as trials increase: the reward function should increase in value, time should decrease,
       the health remaining should increase, and the hunger remaining should decrease. The consistency and reliability of
@@ -65,29 +75,39 @@
       required to mine iron ore and observe whether it can achieve the goal. The agent should be able to eventually find
       iron ore in a reasonable amount of time, with a reasonable amount of health and hunger. The “moonshot” case would
       be that the agent find iron ore regardless of the environment (e.g. snow, desert, ocean, etc.).
-
+      </br>
+      </br>
       <b>Goals</b>
-
+      </br>
+      </br>
       <i>Minimum Goal</i>
-
+      </br>
+      </br>
       The agent should be able to survive, break down a tree for wood materials, and build a crafting table.
-      Milestone 1: Survive for one day (20 minutes) and one night (7 minutes) and possibly break down a tree.
-      Milestone 2: Build a crafting table.
-
+      <ul>
+        <li>Milestone 1: Survive for one day (20 minutes) and one night (7 minutes) and possibly break down a tree.</li>
+        <li>Milestone 2: Build a crafting table.</li>
+      </ul>
+      </br>
       <i>Realistic Goal</i>
-
+      </br>
+      </br>
       The agent should be able to build a more complex item such as a pickaxe (this needs requires two sticks and three
       planks; the sticks need to be crafted separately in most occasions). The agent should then be able to find stone,
       build that into a pickaxe, and have the knowledge to dig down for iron.
-      Milestone 1: Be able to build a wooden pickaxe and dig down to find stone.
-      Milestone 2: Be able to build a stone pickaxe and try to dig down to find iron.
-
+      <ul>
+        <li>Milestone 1: Be able to build a wooden pickaxe and dig down to find stone.</li>
+        <li>Milestone 2: Be able to build a stone pickaxe and try to dig down to find iron.</li>
+      </ul>
+      </br>
       <i>Moonshot Goal</i>
-
+      </br>
+      </br>
       The agent should not only be able to find iron, but also find iron as fast as possible without losing too much
       health or hunger and perhaps build an iron pickaxe.
-      Milestone 1: Find iron ore and mine it in any amount of time, hunger, and health.
-
+      <ul>
+        <li>Milestone 1: Find iron ore and mine it in any amount of time, hunger, and health.</li>
+      </ul>
     </div>
 
     <div id="Progress Report" class="page hide">
