@@ -42,9 +42,10 @@
       library. In particular, the goal will be for the agent to be able to mine iron, a necessary material for
       advancement in the survival mode of Minecraft. To accomplish this, the agent will use the environment and the
       possible actions as input; deciding some action depending on the state of the environment. It follows that the
-      output will be the result of the action taken, scored by using a reward metric . Thus, the agent will aim to
+      output will be the result of the action taken, scored by using a reward metric. This reward metric will prioritize
+      actions that are involved in obtaining iron ore (crafting, surviving, and mining). Thus, the agent will aim to
       maximize this reward metric in a way that pushes it to obtain a piece of iron ore. Since iron is eventually needed
-      to obtain diamond, this task is a subtask of the popular diamond-finding task.
+      to obtain diamond, this task is a subtask of the popular diamond-finding task and is directly applicable.
 
       </br>
       </br>
@@ -70,11 +71,12 @@
       the reward function. Then as trials increase: the reward function should increase in value, time should decrease,
       the health remaining should increase, and the hunger remaining should decrease. The consistency and reliability of
       the agent will be measured by checking to see if there are any sudden jumps in the data. One of the qualitative
-      goals is for the agent to function well regardless of where the agent spawns or how often mobs spawn nearby. The
-      best way to verify that the algorithm works is to put the agent in an environment with all the necessary materials
-      required to mine iron ore and observe whether it can achieve the goal. The agent should be able to eventually find
-      iron ore in a reasonable amount of time, with a reasonable amount of health and hunger. The “moonshot” case would
-      be that the agent find iron ore regardless of the environment (e.g. snow, desert, ocean, etc.).
+      goals is for the agent to function well regardless of where the agent spawns or how often mobs (monsters which can
+      hurt the player) spawn nearby. The best way to verify that the algorithm works is to put the agent in an
+      environment with all the necessary materials required to mine iron ore as well as without enemy mobs and observe
+      whether it can achieve the goal. The agent should be able to eventually find iron ore in a reasonable amount of
+      time, with a reasonable amount of health and hunger. The “moonshot” case would be that the agent find iron ore
+      regardless of the environment (e.g. snow, desert, ocean, etc.) and mobs.
       </br>
       </br>
       <b>Goals</b>
@@ -83,7 +85,8 @@
       <i>Minimum Goal</i>
       </br>
       </br>
-      The agent should be able to survive, break down a tree for wood materials, and build a crafting table.
+      The agent should be able to survive, break down a tree for wood materials, and build a crafting table. This will
+      be done with an optimal environment and without mob spawns.
       <ul>
         <li>Milestone 1: Survive for one day (20 minutes) and one night (7 minutes) and possibly break down a tree.</li>
         <li>Milestone 2: Build a crafting table.</li>
@@ -94,7 +97,8 @@
       </br>
       The agent should be able to build a more complex item such as a pickaxe (this needs requires two sticks and three
       planks; the sticks need to be crafted separately in most occasions). The agent should then be able to find stone,
-      build that into a pickaxe, and have the knowledge to dig down for iron.
+      build that into a pickaxe, and have the knowledge to dig down for iron. This will also be done with an optimal
+      environment and without mobs.
       <ul>
         <li>Milestone 1: Be able to build a wooden pickaxe and dig down to find stone.</li>
         <li>Milestone 2: Be able to build a stone pickaxe and try to dig down to find iron.</li>
@@ -104,7 +108,8 @@
       </br>
       </br>
       The agent should not only be able to find iron, but also find iron as fast as possible without losing too much
-      health or hunger and perhaps build an iron pickaxe.
+      health or hunger and perhaps build an iron pickaxe. This should eventually be done in any environment and with
+      mobs present.
       <ul>
         <li>Milestone 1: Find iron ore and mine it in any amount of time, hunger, and health.</li>
       </ul>
